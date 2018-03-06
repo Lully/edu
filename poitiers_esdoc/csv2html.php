@@ -5,7 +5,7 @@
     <body>
 <?php
 $row = 1;
-if (($handle = fopen("test.csv", "r")) !== FALSE) {
+if (($handle = fopen("https://raw.githubusercontent.com/Lully/edu/master/poitiers_esdoc/listeBiblio.csv", "r")) !== FALSE) {
     $headers = fgetcsv($handle, 0, ';' , '"');
     
     while (($data = fgetcsv($handle, 0, ";", '"')) !== FALSE) {
